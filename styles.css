@@ -1,89 +1,90 @@
-    /* General Styles */
-    body {
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #f2f2f2;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2; /* Light gray background for light mode */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 
-    /* Mode-changing Button */
-    .mode-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background-color: #dcdcdc;
-      border: none;
-      color: #666;
-      font-size: 1.2rem;
-      padding: 10px;
-      border-radius: 30px;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    }
+/* Mode-changing Button */
+.mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #dcdcdc;
+  border: none;
+  color: #666;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 
-    .mode-toggle:hover {
-      background-color: #f2f2f2;
-      color: #333;
-    }
+.mode-toggle:hover {
+  background-color: #f2f2f2;
+  color: #333;
+}
 
-    .mode-toggle:focus {
-      outline: none;
-      box-shadow: 0 0 0 4px #5a01a7;
-    }
+.mode-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #5a01a7;
+}
 
-    .mode-toggle:active {
-      background-color: #e6e6e6;
-      color: #333;
-    }
+.mode-toggle:active {
+  background-color: #e6e6e6;
+  color: #333;
+}
 
-    .mode-toggle i {
-      margin-right: 5px;
-      transition: transform 0.3s ease-in-out;
-    }
+.mode-toggle i {
+  margin-right: 5px;
+  transition: transform 0.3s ease-in-out;
+}
 
-    .mode-toggle.mode-night i {
-      transform: rotate(180deg);
-    }
+.mode-toggle.mode-night i {
+  transform: rotate(180deg);
+}
 
-    .mode-toggle.mode-night {
-      background-color: #5a01a7;
-      color: #fff;
-    }
+.mode-toggle.mode-night {
+  background-color: #5a01a7; /* Deep purple background for night mode toggle */
+  color: #fff;
+}
 
-    .mode-toggle.mode-night:hover {
-      background-color: #7a01a7;
-    }
+.mode-toggle.mode-night:hover {
+  background-color: #7a01a7;
+}
 
-    .mode-toggle.mode-night:focus {
-      box-shadow: 0 0 0 4px #5a01a7;
-    }
+.mode-toggle.mode-night:focus {
+  box-shadow: 0 0 0 4px #5a01a7;
+}
 
-    .mode-toggle.mode-night:active {
-      background-color: #6a01a7;
-    }
+.mode-toggle.mode-night:active {
+  background-color: #6a01a7;
+}
 
-    .mode-toggle.mode-night i {
-      color: #fff;
-    }
+.mode-toggle.mode-night i {
+  color: #fff;
+}
 
-    /* Screen Reader Text */
-    .screen-reader-text {
-      position: absolute;
-      left: -10000px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-    }
+/* Screen Reader Text */
+.screen-reader-text {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
 /* Night mode styles */
 body.mode-night {
-  background-color: #333;
+  background-color: #2f1550; /* Deep purple background for night mode */
   color: #ddd;
 }
 
@@ -91,8 +92,6 @@ body.mode-night .mode-toggle {
   background-color: #555;
   color: #ddd;
 }
-
-
 
 .new-design-message {
   position: absolute;
